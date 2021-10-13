@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.body {
+    background: url("./image/bg.jpg");
+    min-height:100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board {
+    background: linear-gradient(rgb(204, 197, 197),rgb(202, 202, 112));
+    width:90vmin;
+    height:92vmin;
+    border:2px solid black;
+    display:grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head {
+    background:linear-gradient(red,yellow);
+    border-radius: 20%;
+    border:2px solid rgb(63, 49, 63);
+    transform:scale(1.2);
+}
+.snake {
+    background-color: purple;
+    border:.25vmin solid white;
+    border-radius: 20%;
+}
+.food {
+    background:linear-gradient(rgb(230, 214, 214),rgb(183, 187, 190));
+    border-radius: 30%;
+    transform:scale(.8);
+    border:.25vmin solid black;
+}
+#score {
+    position: absolute;
+    top:50px;
+    right:150px;
+    font-size:39px;
+    color:orange;
+    font-weight: border;
+}
+#highscore {
+    position: absolute;
+    top:90px;
+    right:150px;
+    font-size:39px;
+    color:orange;
+    font-weight: border;
+}
